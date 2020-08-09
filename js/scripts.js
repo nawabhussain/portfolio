@@ -108,13 +108,22 @@
 		
         /* Typed.js */
 		
-        $(window).load(function(){
-        $(".typing").typed({
-            strings: ["I am A Freelancer.", "I Design Websites.", "I Live in New York."],    /* You can change the home section typing text from
-	                                                                                            here and do not use "&" use "and" */
-            typeSpeed: 50
-          });
-         });
+		// const typing = setInterval(function(){
+        // $(".typing").typed({
+        //    strings: ["Software Developer.", "Machine Learning Engineer.", "Solution Architect."],    /* Do not use "&" use "and" */
+        //    typeSpeed: 50
+        //  });
+        // }, 10000);
+		 
+		function typing(){
+			$(".typing").typed({
+				strings: ["Software Developer.", "Machine Learning Engineer.", "Solution Architect."],    /* Do not use "&" use "and" */
+				typeSpeed: 50
+			});
+			setInterval(typing, 10000);
+         }
+		
+        $(window).load(typing);
         
 		 
         /* Parallax Background */
