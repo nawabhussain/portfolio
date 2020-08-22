@@ -108,19 +108,13 @@
 		
         /* Typed.js */
 		
-		// const typing = setInterval(function(){
-        // $(".typing").typed({
-        //    strings: ["Software Developer.", "Machine Learning Engineer.", "Solution Architect."],    /* Do not use "&" use "and" */
-        //    typeSpeed: 50
-        //  });
-        // }, 10000);
 		 
 		function typing(){
 			$(".typing").typed({
-				strings: ["Software Developer.", "Machine Learning Engineer.", "Solution Architect."],    /* Do not use "&" use "and" */
-				typeSpeed: 50
+				strings: ["Software Developer^2000", "Machine Learning Engineer^2000", "Solution Architect^2000"],    /* Do not use "&" use "and" */
+				typeSpeed: 100
 			});
-			setInterval(typing, 10000);
+			setInterval(typing, 7000);
          }
 		
         $(window).load(typing);
